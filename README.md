@@ -21,23 +21,25 @@
   
 
 ## 3) 테스트 방법
+  * 프로젝트 열기 후 실행 
+
   * 패키지 리스트 조회 (http://localhost:8080/packages)
     swagger url 접속 후 Execute 실행    
     http://localhost:8080/swagger-ui.html#/package-controller
     
     
-  * 챕터 리스트 조회 (http://localhost:8080/chapters/{packageId})
+  * 챕터 리스트 조회 (http://localhost:8080/chapters/2)
     swagger url 접속 후, packageId 값에 1~3 값 입력하여 Execute 실행    
     http://localhost:8080/swagger-ui.html#/chapter-controller
     
-  * 영상 리스트 조회 (http://localhost:8080/videos/{chapterId})
+  * 영상 리스트 조회 (http://localhost:8080/videos/2)
     swagger url 접속 후, chapterId 값에 1~8 값 입력하여 Execute 실행   
     http://localhost:8080/swagger-ui.html#/video-controller
     
   * 영상 제목 혹은 태그 검색 
     http://localhost:8080/swagger-ui.html#/video-controller
 
-    1) 제목 검색 (http://localhost:8080/videos/search?title={title})
+    1) 제목 검색 (http://localhost:8080/videos/search?title=First)
        swagger url 접속 후, title 값에 찾고 싶은 제목을 입력 후 Execute 실행
        
     2) 태그 검색 (http://localhost:8080/videos/search?tag=fun)
