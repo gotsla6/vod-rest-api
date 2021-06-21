@@ -31,7 +31,6 @@ INSERT INTO tbl_video (chapter_id, name, description, tags, identifier) VALUES
 (8, 'South Jeju', 'Waterfalls!', 'travel,fun', 'h8R51NoEVw');
 
 INSERT INTO tbl_translation (type, translated_id, key, value, lang) VALUES
-('packages', 1, 'name', 'Premier coffret', 'fr');
-
-
+('packages', 1, 'name', 'Premier coffret', 'fr'),
+('packages', 1, 'description', 'Ceci est la description du premier coffret', 'fr');
 

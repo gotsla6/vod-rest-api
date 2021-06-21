@@ -28,7 +28,7 @@ public class PackageController {
             result.put("packages", packageList);
             resultMessage.add("SUCCESS");
         } else {
-            resultMessage.add("NULL_DATA");
+            resultMessage.add("packages NULL_DATA");
         }
 
         result.put("result_message", resultMessage);

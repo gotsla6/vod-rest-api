@@ -1,14 +1,12 @@
 package com.education.hybe.domain;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Table(name = "tbl_translation")
-public class Translation implements Serializable {
+public class Translation {
     @Id
+    @JoinColumn(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
@@ -21,4 +19,6 @@ public class Translation implements Serializable {
     private String value;
 
     private String lang;
+
+
 }

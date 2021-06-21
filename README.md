@@ -16,7 +16,7 @@
     * Spring Boot 2.5.1
     * JPA
     * Lombok
-    * H2
+    * H2 (http://localhost:8080/h2)
     * Gradle
   
 

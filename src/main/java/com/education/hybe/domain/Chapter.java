@@ -1,5 +1,6 @@
 package com.education.hybe.domain;
 
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
@@ -9,6 +10,7 @@ import java.io.Serializable;
 @Entity
 @Data
 @Table(name = "tbl_chapter")
+@ApiModel(value = "2. Chapter", description = "챕터 테이터")
 public class Chapter implements Serializable {
 
     @Id

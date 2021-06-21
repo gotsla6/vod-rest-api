@@ -1,13 +1,14 @@
 package com.education.hybe.domain;
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import javax.persistence.*;
 
-
 @Entity
 @Data
 @Table(name = "tbl_package")
+@ApiModel(value = "1. Package", description = "패키지 테이터")
 public class Package {
 
     @Id
@@ -20,5 +21,4 @@ public class Package {
 
     @ApiModelProperty(value="Package Description")
     private String packageDescription;
-
 }
